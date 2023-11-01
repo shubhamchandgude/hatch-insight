@@ -1,0 +1,426 @@
+  @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@200;300&family=Noto+Serif:ital,wght@0,300;1,300;1,400&family=Nunito:wght@200;400;700&family=PT+Serif:ital@1&family=Poppins:wght@100;200;500&display=swap');
+
+  .main-section-login.triple_cloud {
+      color: #fff;
+      position: relative;
+      /* padding-bottom: 60px; */
+      display: grid;
+      place-items: center;
+  }
+
+  body {
+      font-family: 'Chivo', sans-serif;
+      font-size: 16px;
+      height: 100%;
+      margin: 0px;
+      display: block;
+  }
+
+  .main-section-login {
+      background: url('https://rmsstaging.hatchearlychildhood.com/images/ignite/Background_Login.png') no-repeat center center / cover;
+      padding: 120px 0px 0px 0px;
+      /* min-height: 100vh; */
+  }
+
+  *,
+  ::after,
+  ::before {
+      box-sizing: border-box;
+  }
+
+  .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+  }
+
+  .text-center {
+      text-align: center !important;
+  }
+
+  .login-wrap {
+      width: calc(82% - 75px);
+      padding: 0px 0px;
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: auto;
+  }
+
+  .form-login {
+      background-color: #fff;
+      background-image: url('https://rmsstaging.hatchearlychildhood.com/images/ignite/Login_Cloud.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 25px;
+      padding-top: 30px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 5px 5px 1px rgb(1 0 2 / 25%);
+  }
+
+  form {
+      display: block;
+      margin-top: 0em;
+  }
+
+  .login-wrap .login-message {
+      background: #B8E6F4;
+      margin: 50px -25px 25px;
+      padding: 15px 20px;
+  }
+
+  .login-wrap .login-message h3 {
+      margin: 0;
+      font-size: 27px;
+      color: #0072BC;
+      font-weight: 900;
+      font-family: 'Nunito', sans-serif;
+  }
+
+  .form-login .form-group {
+      position: relative;
+  }
+
+  .mt-3,
+  .my-3 {
+      margin-top: 2rem !important;
+  }
+
+  .form-group {
+      margin-bottom: 1rem;
+  }
+
+  .no-gutters {
+      margin-right: 0;
+      margin-left: 0;
+  }
+
+  div {
+      display: block;
+  }
+
+  .no-gutters>.col,
+  .no-gutters>[class*=col-] {
+      padding-right: 0;
+      padding-left: 0;
+  }
+
+  .text-left {
+      text-align: left !important;
+  }
+
+  button,
+  input {
+      overflow: visible;
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+  }
+
+  input:not([type="email" i], [type="number" i], [type="password" i], [type="search" i], [type="tel" i], [type="text" i], [type="url" i]) {
+      writing-mode: horizontal-tb !important;
+  }
+
+  input[type="hidden" i] {
+      appearance: none;
+      background-color: initial;
+      cursor: default;
+      display: none !important;
+      padding: initial;
+      border: initial;
+  }
+
+  .login-wrap .control-label {
+      color: #505050;
+      font-size: 23px;
+      margin-bottom: 0px;
+      font-weight: 900;
+  }
+
+  .pl-2 {
+      padding-left: 0.5rem !important;
+  }
+
+  label {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      cursor: default;
+  }
+
+  .input-block {
+      position: relative;
+  }
+
+  .pass-toggle.toggled {
+      background-image: url("https://rmsstaging.hatchearlychildhood.com/images/ignite/showpass-hide.png");
+      transition: 0.5s all ease;
+  }
+
+  .input-block .pass-toggle {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      display: inline-block;
+      width: 46px;
+      height: 30px;
+      transform: translateY(-50%);
+      /* transition: 0.5s all ease; */
+  }
+
+  #LoginForm_username {
+      padding: 12px 12px 12px 12px;
+  }
+
+  .form-login input.form-control {
+      padding: 12px 70px 12px 12px;
+      background: #e8f0fe;
+      height: 58px;
+  }
+
+  .errorlabel {
+      color: #ED2124 !important;
+      font-weight: 400;
+      font-size: 16px;
+  }
+
+  .mb-0,
+  .my-0 {
+      margin-bottom: 0 !important;
+  }
+
+  p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-family: 'Chivo', sans-serif;
+      line-height: 1.7em;
+  }
+
+  p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=password] {
+      width: 100%;
+      background: #EAEAEA;
+      padding: 13px;
+      color: #555;
+      border-left: 1px #c7c7c8 solid;
+      border-top: 1px #c7c7c8 solid;
+      border-bottom: 1px #dedcdc solid;
+      border-right: 1px #dedcdc solid;
+      border-radius: 5px;
+      margin: 3px 0;
+  }
+
+  .form-control {
+      display: block;
+      width: 100%;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .form-control {
+      display: block;
+      width: 100%;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  a,
+  a:hover {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s;
+      outline: none;
+  }
+
+  a {
+      color: #007bff;
+      text-decoration: none;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+  }
+
+  .errorMessage {
+      display: inline-block;
+      padding-left: 0px;
+      color: #ED2124 !important;
+      margin-top: 0;
+      font-size: 16px;
+      font-family: 'Chivo', sans-serif;
+  }
+
+  .mt-30 {
+      margin-top: 30px;
+  }
+
+  button.btn.btn-block.btn-login {
+      background: #00AF51;
+      color: #FFF;
+      border: none;
+      padding: 10px;
+      border-radius: 28px;
+      font-weight: 900;
+      font-size: 27px;
+      width: auto;
+      margin: 40px auto;
+      min-width: 75%;
+  }
+
+  .login-wrap .login-extra-links {
+      color: #0973BA;
+      margin: 10px 0px 0px;
+  }
+
+  .login-wrap .login-extra-links a {
+      display: inline-block;
+      color: #0973BA;
+      font-size: 20px;
+      margin: 10px 5px;
+      font-weight: 600;
+  }
+
+  a,
+  a:hover {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s;
+      outline: none;
+  }
+
+  .sign-with-classlink a {
+      display: inline-block;
+      margin-top: 10px;
+      box-shadow: 0px 0px 22px 0px rgb(255 255 255 / 74%);
+  }
+
+  .img-fluid {
+      max-width: 100%;
+  }
+
+  img {
+      vertical-align: middle;
+      border-style: none;
+      overflow-clip-margin: content-box;
+      overflow: clip;
+  }
+
+  .full-width-footer {
+      padding: 15px 0px;
+  }
+
+  .footer {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+  }
+
+  ul.footer-links {
+      display: block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  ul {
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+  }
+
+  .footer-links li {
+      display: inline-block;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0px 5px;
+  }
+
+  .footer-links li .fas.fa-phone {
+      transform: rotate(10deg);
+  }
+
+  .help-button {
+      position: sticky;
+      display: flex;
+      justify-content: end;
+      padding-right: 25px;
+      position: sticky;
+      bottom: 16px;
+  }
+
+  .help-button button{
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 20px;
+    background-color: #5f328c;
+  }
+
+  .help-button button i{
+    padding-right: 10px;
+  }
+
+  @media (min-width: 991px) and (max-width: 1280px) {
+      .main-section-login {
+          height: auto;
+      }
+  }
+
+  @media (min-width: 576px) {
+      .col-sm-12 {
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+      }
+  }
+
+  @media (min-width: 992px) {
+      .mt-lg-5,
+      .my-lg-5 {
+          margin-top: 3rem !important;
+      }
+  }
