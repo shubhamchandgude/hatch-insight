@@ -22,9 +22,9 @@ const Login = () => {
                                         <div className="form-group mt-3 no-gutters">
                                             <div className="col-sm-12 text-left">
                                                 <input type='hidden' name='LoginForm' value='/' />
-                                                <label for className='control-label pl-2'>Email Address</label>
+                                                <label htmlFor='LoginForm_username' className='control-label pl-2'>Email Address</label>
                                                 <div className="input-block">
-                                                    <input autoComplete='off' type="email" id="LoginForm_username" placeholder className='form-control is-required-email' maxLength='50' tabIndex='1' />
+                                                    <input autoComplete='off' placeholder='Enter your email' type="email" id="LoginForm_username" className='form-control is-required-email' maxLength='50' tabIndex='1' required />
                                                     <p className="errorlabel mb-0"></p>
                                                     <div className="errorMessage" id='LoginForm' style={{ display: 'none' }}></div>
                                                     <p></p>
@@ -33,21 +33,21 @@ const Login = () => {
                                         </div>
                                         <div className="form-group no-gutters">
                                             <div className="col-sm-12 text-left">
-                                                <label for className='control-label pl-2'>Password</label>
+                                                <label htmlFor='LoginForm_password' className='control-label pl-2'>Password</label>
                                                 <div className="input-block">
-                                                    <input autoComplete='off' type="password" id="LoginForm_password" className='form-control' placeholder maxLength='50' tabIndex='2' name='LoginForm' />
+                                                    <input autoComplete='off' type="password" placeholder='Enter your password' id="LoginForm_password" className='form-control errorfield' maxLength='50' tabIndex='2' name='LoginForm[password]' required/>
                                                     <a className='pass-toggle toggled' id='LoginForm_show' href="#" title='Show Password'></a>
                                                 </div>
+                                                <p class="errorlabel mb-0" style={{ display: "none" }}>Your password must be at least 6 characters</p>
                                                 <p className="errorlabel mb-0"></p>
-                                                <p className="errorlabel mb-0"></p>
-                                                <div class="errorMessage" id="LoginForm_password_em_" style={{ display: "none" }}></div>
+                                                <div className="errorMessage" id="LoginForm_password_em_" style={{ display: "none" }}></div>
                                                 <p></p>
                                                 <p className="errorlabel mb-0" id="info_alert" style={{ display: "none" }}></p>
                                             </div>
                                         </div>
                                         <div className="mt-30">
                                             <button className="btn btn-block btn-login" id="setPassBtn" type='submit' tabIndex='3'>Log In</button>
-                                            <div class="login-extra-links mt-30">
+                                            <div className="login-extra-links mt-30">
                                                 <a href="https://rmsstaging.hatchearlychildhood.com/site/forgotpassword?token=mlsipqtnkhejcbforagd">Forget your password?</a>
                                                 |
                                                 <a target="_blank" href="https://support.hatchearlylearning.com/hc/en-us/articles/4526935151380">Login Help </a>
@@ -59,9 +59,9 @@ const Login = () => {
                                 </div>
                             </div>
 
-                            <div class="sign-with-classlink mt-5 mt-md-4 mt-lg-5">
+                            <div className="sign-with-classlink mt-5 mt-md-4 mt-lg-5">
                                 <a href="https://launchpad.classlink.com/oauth2/v2/auth?scope=full,profile&red…&client_id=c16021754185055cafb4470494668704b25cbcc7c466&response_type=code" target="_blank">
-                                    <img width='300px' src="https://rmsstaging.hatchearlychildhood.com/images/insight/sign-with-classlink.png" class="img-fluid" alt></img>
+                                    <img width='300px' src="https://rmsstaging.hatchearlychildhood.com/images/insight/sign-with-classlink.png" className="img-fluid" alt='signImage'></img>
                                 </a>
                             </div>
                         </div>
@@ -69,8 +69,8 @@ const Login = () => {
                 </div>
 
                 {/* //Footer */}
-                <div class="footer full-width-footer">
-                    <ul class="footer-links">
+                <div className="footer full-width-footer">
+                    <ul className="footer-links">
                         <li>
                             ©
                             <span>2023 Hatch, Inc.&emsp;|</span>
@@ -82,7 +82,7 @@ const Login = () => {
                             </span>
                         </li>
                         <li>
-                            <i class="fas fa-phone"></i>
+                            <i className="fas fa-phone"></i>
                             &nbsp;&nbsp;&nbsp;
                             <span>1.800.624.7968 option 4</span>
                         </li>
@@ -90,7 +90,7 @@ const Login = () => {
                 </div>
                 <div className="help-button">
                     <button className='btn btn-primary'>
-                        <i class="fa-regular fa-circle-question"></i>
+                        <i className="fa-regular fa-circle-question"></i>
                         Help
                     </button>
                 </div>

@@ -111,7 +111,7 @@
   }
 
   .no-gutters>.col,
-  .no-gutters>[class*=col-] {
+  .no-gutters>[className*=col-] {
       padding-right: 0;
       padding-left: 0;
   }
@@ -176,6 +176,7 @@
   }
 
   .input-block .pass-toggle {
+    background-image: url("https://rmsstaging.hatchearlychildhood.com/images/ignite/showpass-show.png");
       position: absolute;
       right: 10px;
       top: 50%;
@@ -183,8 +184,12 @@
       width: 46px;
       height: 30px;
       transform: translateY(-50%);
-      /* transition: 0.5s all ease; */
+      transition: 0.5s all ease;
   }
+
+  /* .errorfield {
+    border: 2px solid#ED2124 !important;
+} */
 
   #LoginForm_username {
       padding: 12px 12px 12px 12px;
